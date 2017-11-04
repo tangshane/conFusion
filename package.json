@@ -1,0 +1,27 @@
+{
+  "name": "confusion",
+  "version": "1.0.0",
+  "description": "Full Stack Web Development Exercise & Assignment",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangshane/conFusion.git"
+  },
+  "author": "Shane Tang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tangshane/conFusion/issues"
+  },
+  "homepage": "https://github.com/tangshane/conFusion#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}
