@@ -43,16 +43,19 @@
                 <div class="col col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
+                <div class="col col-sm align-self-center">
+                    <a href="#reserveform" class="btn btn-warning text-white btn-sm">Reserve Table</a>
+                </div>
             </div>
         </div>
     </header>
 
     <div class="container"> 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
+            <div class="col-sm-4 col-md-3 flex-last">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col-sm col-md">
+            <div class="col-sm col-md flex-first">
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center"
                          src="img/uthappizza.png" alt="Uthappizza">
@@ -69,20 +72,28 @@
 
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 flex-last">
+            <div class="col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col-sm col-md flex-first">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class="col-sm col-md">
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+                        <p class="hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <div class="media-right media-middle">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center"
+                         src="img/buffet.png" alt="buffet">                        
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
+            <div class="col-sm-4 col-md-3 flex-last">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-            <div class="col-sm col-md">
+            <div class="col-sm col-md flex-first">
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center"
                          src="img/alberto.png" alt="Alberto Somayya">
@@ -98,6 +109,61 @@
                 </div>
             </div>
         </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-block">
+                        <form id="reserveform">
+                            <div class="form-group row">
+                                <label class="col-12 col-sm-12 col-md-2 col-form-label">Number of Guests</label>
+                                <div class="col-12 col-sm-12 col-md-10 form-check form-check-inline d-flex justify-content-between">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="guest" id="guest1" value="guest1"> 1
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="guest" id="guest2" value="guest2"> 2
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="guest" id="guest3" value="guest3"> 3
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="guest" id="guest4" value="guest4"> 4
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="guest" id="guest5" value="guest5"> 5
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="guest" id="guest6" value="guest6"> 6
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="date time" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                        <input type="text" name="date" class="form-control" id="date" placeholder="Date">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+                                        <input type="text" name="time" class="form-control" id="time" placeholder="Time">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button type="submit" class="btn-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>    
     </div>
 
     <footer class="footer">
